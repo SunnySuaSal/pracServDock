@@ -1,0 +1,33 @@
+# ---------------------------------------
+# Project: pracServDock
+# Purpose: Ignore system files, secrets,
+#          editor temp files, and Docker data
+# ---------------------------------------
+
+# --- macOS ---
+.DS_Store
+
+# --- Vim / Neovim ---
+*.swp
+*.swo
+*.swm
+
+# --- VSCode ---
+.vscode/
+
+# --- Environment files (credentials) ---
+.env
+*.env
+
+# --- Docker logs and overrides ---
+*.log
+docker-compose.override.yml
+
+# --- MariaDB / Docker volumes ---
+db_data/
+**/db_data/
+
+# --- PHP / Composer (if used later) ---
+vendor/
+composer.lock
+
